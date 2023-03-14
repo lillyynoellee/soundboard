@@ -1,0 +1,90 @@
+/* Elements */
+/* Universal selector reset */
+* {  
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+	font-family: 'Super Mario';
+	src: url("../assets/fonts/super_mario_256/SuperMario256.ttf");
+}
+
+body {
+  background: #E7F8F5;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testbutton {
+  font-family: 'Super Mario';
+  color: #323736 !important;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 60px 20px;
+  border-radius: 30px;
+  border: 10px solid #28D6B6;
+  background: #57E7CD;
+  position: relative;
+  margin: 3% 3%;
+  width: 17%;
+}
+
+.testbutton:hover {
+  color: #323736 !important;
+  background: #28D6B6;
+}
+
+.button-margin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: 'Super Mario';
+  font-size: 4rem;
+  color: #323736 !important;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.lumaimg1 {
+  position: absolute;
+  width: 100px;
+  left: 3%;
+  top: 5%;
+}
+
+.lumaimg2 {
+  position: fixed;
+  width: 100px;
+  right: 5%;
+  bottom: 5%;
+}
+
+@media screen and (width <= 1110px) {
+.testbutton {
+  width: 60%;
+}
+}
+
+@media screen and (width <= 530px) {
+  .lumaimg1 {
+    display: none;
+  }
+
+  .lumaimg2 {
+    display: none;
+  }
+}
